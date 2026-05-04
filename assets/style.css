@@ -483,12 +483,12 @@ button { font: inherit; }
 /* Showcase blocks (zig-zag) ------------------------------------------- */
 .showcase-block {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 80px;
   align-items: center;
-  margin-top: 96px;
+  margin-top: 64px;
 }
-.showcase-block:first-of-type { margin-top: 56px; }
+.showcase-block:first-of-type { margin-top: 40px; }
 
 .showcase-block--reverse .showcase-block__copy { order: 2; }
 .showcase-block--reverse .showcase-block__visual { order: 1; }
@@ -496,8 +496,8 @@ button { font: inherit; }
 @media (max-width: 880px) {
   .showcase-block {
     grid-template-columns: 1fr;
-    gap: 32px;
-    margin-top: 64px;
+    gap: 28px;
+    margin-top: 48px;
   }
   .showcase-block--reverse .showcase-block__copy { order: 1; }
   .showcase-block--reverse .showcase-block__visual { order: 2; }
@@ -510,10 +510,10 @@ button { font: inherit; }
   letter-spacing: 0.08em;
   text-transform: uppercase;
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 .showcase-block__title {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   letter-spacing: -0.4px;
 }
 .showcase-block__body {
@@ -538,11 +538,15 @@ button { font: inherit; }
   align-items: center;
   justify-content: center;
 }
+/* 截图限定为真实 Nook panel 尺寸级别(360×540),避免在 grid 中被拉到几千 px 高 */
 .showcase-block__visual img,
 .showcase-block__visual video {
   display: block;
-  max-width: 100%;
+  max-width: 360px;
+  max-height: 540px;
+  width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 /* Download ------------------------------------------------------------ */
