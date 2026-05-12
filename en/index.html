@@ -3,21 +3,22 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>melliefan</title>
-<meta name="description" content="Solutions Architect at a Chinese AI lab. Building tools on the side. Currently shipping Nook — a macOS todo panel that lives in your screen corner." />
-<meta name="theme-color" content="#DBDBDF" />
+<title>Mellie F. — independent software</title>
+<meta name="description" content="Independent software, by Mellie F. Currently shipping Nook (a macOS todo panel) and LeetVibe (an AI-coding training platform)." />
+<meta name="theme-color" content="#FFFFFF" />
+<meta name="color-scheme" content="light" />
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
 
-<meta property="og:title" content="melliefan" />
-<meta property="og:description" content="Solutions Architect · Building tools on the side" />
-<meta property="og:image" content="https://melliefan.github.io/assets/images/og-cover.png" />
-<meta property="og:url" content="https://melliefan.github.io/en/" />
+<meta property="og:title" content="Mellie F. — independent software" />
+<meta property="og:description" content="Software made for the long term, by Mellie F." />
+<meta property="og:image" content="https://melliefan.com/assets/images/og-cover.png" />
+<meta property="og:url" content="https://melliefan.com/en/" />
 
-<link rel="alternate" hreflang="en" href="https://melliefan.github.io/en/" />
-<link rel="alternate" hreflang="zh" href="https://melliefan.github.io/" />
-<link rel="alternate" hreflang="x-default" href="https://melliefan.github.io/" />
+<link rel="alternate" hreflang="en" href="https://melliefan.com/en/" />
+<link rel="alternate" hreflang="zh" href="https://melliefan.com/" />
+<link rel="alternate" hreflang="x-default" href="https://melliefan.com/" />
 
-<link rel="stylesheet" href="../assets/style.css" />
+<link rel="stylesheet" href="../assets/style.css?v=noline5" />
 </head>
 <body>
 
@@ -28,7 +29,7 @@
       <span>melliefan</span>
     </a>
     <nav class="site-nav" aria-label="Primary">
-      <a class="nav-link" href="#building">Work</a>
+      <a class="nav-link" href="#shipping">Shipping</a>
       <a class="nav-link" href="#contact">Contact</a>
       <span class="lang-switch" aria-label="Language">
         <a href="../index.html">中</a>
@@ -40,51 +41,88 @@
 
 <main>
 
-  <section class="container hero" style="padding-top: 96px;">
-    <div class="hero__copy">
-      <span class="eyebrow">Hi · 你好</span>
-      <h1 class="hero-display hero__title" style="font-size: clamp(36px, 5.2vw, 56px);">melliefan</h1>
-      <p class="lede hero__sub">Solutions Architect at a Chinese AI lab. Building small tools I want to use, on the side.</p>
+  <section class="hero hero--cinematic" data-text="Mellie F." aria-label="Mellie F. — independent software">
+    <canvas class="hero-canvas-bg" aria-hidden="true"></canvas>
+    <canvas class="hero-canvas-particles" aria-hidden="true"></canvas>
+
+    <h1 class="hero-display hero__title sr-only">Mellie F.</h1>
+
+    <div class="status-tags" aria-hidden="true">
+      <span class="status-tag tag--tl">Indie · since 2026</span>
+      <span class="status-tag tag--tr">v1.0 · shipping</span>
+      <span class="status-tag tag--bl">Swift · native</span>
+      <span class="status-tag tag--br">No telemetry</span>
+    </div>
+
+    <button class="audio-toggle" type="button" aria-label="Toggle ambient melody">
+      <span class="audio-toggle__icon" aria-hidden="true"></span>
+      <span class="audio-toggle__label">Sound · off</span>
+    </button>
+
+    <div class="hero__lede-box">
+      <p class="hero-lede">I make small Mac software, made to last and to stay out of the way.</p>
     </div>
   </section>
 
-  <section class="container section reveal" id="building" style="padding-top: 24px;">
-    <div class="section-head">
-      <span class="eyebrow">Currently building</span>
-      <h2 class="h1">Currently building.</h2>
+  <section class="container section reveal" id="shipping">
+    <div class="editorial-rule">
+      <span>Shipping</span>
+      <span class="editorial-rule__count">02</span>
     </div>
 
-    <a class="work-card" href="nook/index.html" aria-label="Open Nook product page">
+    <a class="work-card" href="../nook/index.html" aria-label="Open Nook">
       <div class="work-card__body">
         <div>
-          <div class="work-card__meta"><span>macOS</span><span>· v1.0.0</span><span>· 5 MB</span></div>
+          <div class="work-card__meta"><span>macOS</span><span>· v1.0</span><span>· 5 MB</span><span>· $4.99</span></div>
           <h3 class="h1">Nook</h3>
-          <p class="lede" style="margin-top: 14px;">A todo list that lives in the corner of your screen. Slam your mouse into a corner — your tasks slide in.</p>
+          <p class="lede" style="margin-top: 14px;">A todo list that lives in your screen corner. Slam your mouse into a corner — your tasks slide in. Slide them out by walking away.</p>
         </div>
-        <span class="work-card__cta">Open Nook</span>
+        <span class="work-card__cta">Read more</span>
       </div>
       <div class="work-card__visual">
-        <!-- TODO: replace with AI-generated nook-cover.png (see ASSETS.md §3.1); using main-panel screenshot as placeholder -->
         <img src="../assets/images/screenshot-light-1.png" alt="Nook main panel preview" loading="lazy">
       </div>
     </a>
 
-    <div class="soon-card">
-      <span>More coming soon.</span>
-      <span class="mono">MORE COMING SOON</span>
+    <a class="work-card" href="#" aria-label="LeetVibe — link pending deployment">
+      <div class="work-card__body">
+        <div>
+          <div class="work-card__meta"><span>WEB</span><span>· COURSE PLATFORM</span><span>· 中文</span></div>
+          <h3 class="h1">LeetVibe</h3>
+          <p class="lede" style="margin-top: 14px;">Vibe-coding training for Chinese developers learning Claude Code, MCP, Subagents, Agent Skills. Stop code. Start vibe.</p>
+        </div>
+        <span class="work-card__cta">Visit ↗</span>
+      </div>
+      <div class="work-card__visual">
+        <img src="../assets/images/leetvibe-cover.png" alt="LeetVibe homepage preview" loading="lazy">
+      </div>
+    </a>
+  </section>
+
+  <section class="container section reveal" id="craft">
+    <div class="editorial-rule">
+      <span>The craft</span>
+    </div>
+    <div class="showcase-block">
+      <div class="showcase-block__copy">
+        <h2 class="h1 showcase-block__title">Built end-to-end in Swift, for the next ten years.</h2>
+        <p class="showcase-block__body">Native AppKit and SwiftUI. No Electron. No analytics. No telemetry. Light, Dark, or System. Hot-corner triggers. Apple Reminders sync. Copy-friendly snippets.</p>
+        <p class="showcase-block__body">When something is small enough to fit in a corner, it should also be small enough to disappear when you don't need it.</p>
+      </div>
+      <div class="showcase-block__visual">
+        <img src="../assets/images/screenshot-light-2.png" alt="Nook settings panel" loading="lazy">
+      </div>
     </div>
   </section>
 
   <section class="container section reveal" id="contact">
-    <div class="section-head">
-      <span class="eyebrow">Contact</span>
-      <h2 class="h1">Say hi.</h2>
+    <div class="editorial-rule">
+      <span>Find me</span>
     </div>
-
     <div class="contact">
-      <a href="mailto:melliefan.mail@gmail.com">
+      <a href="mailto:help@melliefan.com">
         <span class="label">Email</span>
-        <span class="value">melliefan.mail@gmail.com</span>
+        <span class="value">help@melliefan.com</span>
       </a>
       <a href="https://github.com/melliefan" rel="noopener">
         <span class="label">GitHub</span>
@@ -101,14 +139,17 @@
 
 <footer class="site-footer">
   <div class="container site-footer__inner">
-    <span>© 2026 melliefan</span>
+    <span>© 2026 Muxiyun Co., Ltd. — Independent software, made for the long term.</span>
     <span class="site-footer__links">
-      <a href="nook/index.html">Nook</a>
-      <a href="mailto:melliefan.mail@gmail.com">melliefan.mail@gmail.com</a>
+      <a href="../nook/index.html">Nook</a>
+      <a href="#">LeetVibe</a>
+      <a href="../legal/privacy.html">Privacy</a>
+      <a href="../legal/terms.html">Terms</a>
     </span>
   </div>
 </footer>
 
-<script src="../assets/main.js" defer></script>
+<script src="../assets/main.js?v=noline5" defer></script>
+<script src="../assets/hero-cinematic.js?v=noline5" defer></script>
 </body>
 </html>
